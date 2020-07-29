@@ -58,7 +58,7 @@ export const TETROMINOS = {
   },
 };
 
-export default function () {
+export function randomization() {
   const tetrominos = 'IJLOSTZ';
   const rand = tetrominos[Math.floor(Math.random() * tetrominos.length)];
   return TETROMINOS[rand];
