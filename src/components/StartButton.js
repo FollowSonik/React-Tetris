@@ -3,6 +3,6 @@ import { StyledStartButton } from './styles/StyledStartButton';
 
 export default function ({ callback }) {
   return (
-    <StyledStartButton onclick={callback}>Start Game</StyledStartButton>
+    <StyledStartButton onClick={callback}>Start Game</StyledStartButton>
   );
 }
