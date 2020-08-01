@@ -17,8 +17,6 @@ export default function () {
   const [player, updatePlayerPos, resetPlayer] = usePlayer();
   const [stage, setStage] = useStage(player, resetPlayer);
 
-  console.log('PogChamp!');
-
   function movePlayer(dir) {
     if (!checkCollision(player, stage, { x: dir, y: 0 })) {
       updatePlayerPos({ x: dir, y: 0 });
@@ -65,9 +63,9 @@ export default function () {
             <Display gameOver={gameOver} text='Game Over' />
           ) : (
               <div>
-                <Display text='score' />
-                <Display text='rows' />
-                <Display text='level' />
+                <Display text='Score' />
+                <Display text='Rows' />
+                <Display text='Level' />
               </div>
             )}
           <StartButton callback={startGame} />

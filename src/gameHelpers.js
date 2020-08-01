@@ -19,4 +19,5 @@ export function checkCollision(player, stage, { x: moveX, y: moveY }) {
       }
     }
   }
+  return false;
 }

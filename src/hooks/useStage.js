@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import { createStage } from '../gameHelpers';
 
 export default function (player, resetPlayer) {
@@ -24,9 +23,7 @@ export default function (player, resetPlayer) {
         });
       });
 
-      if (player.collided) {
-        resetPlayer();
-      }
+      if (player.collided) resetPlayer();
 
       return newStage;
     }
