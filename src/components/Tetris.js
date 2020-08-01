@@ -15,7 +15,7 @@ export default function () {
   const [gameOver, setGameOver] = useState(false);
 
   const [player, updatePlayerPos, resetPlayer] = usePlayer();
-  const [stage, setStage] = useStage(player);
+  const [stage, setStage] = useStage(player, resetPlayer);
 
   console.log('PogChamp!');
 
@@ -26,7 +26,7 @@ export default function () {
   }
 
   function startGame() {
-    setStage(createStage())
+    setStage(createStage());
     resetPlayer();
     setGameOver(false);
   }

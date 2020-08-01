@@ -9,7 +9,7 @@ export default function (player, resetPlayer) {
     function updateStage(prevStage) {
       const newStage = prevStage.map(row => {
         return row.map(cell => {
-          return cell[1] === 'clear' ? [0, 'clear'] : cell
+          return cell[1] === 'clear' ? [0, 'clear'] : cell;
         });
       });
 
